@@ -147,6 +147,12 @@ def objective_beta_delta(params, y_true, y_adaptive, y_trend, y_anchor, window):
     rmsfe = np.sqrt(np.mean((y_true - combined) ** 2))
     return rmsfe
 
+
+
+
+
+
+
 def forecasts(y, t_out_start, t_start, t_end, alpha_hat, phi1_hat, phi2_hat, theta_hat, gamma_hat, lambda_hat, beta_hat, delta_hat):
     n_forecast = len(y)-1-t_out_start 
     y_hat_ectrie = np.zeros(n_forecast)
